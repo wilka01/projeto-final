@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-import org.antlr.v4.runtime.misc.NotNull;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,7 +25,6 @@ import jakarta.persistence.ManyToOne;
 		
 		@ManyToMany
 		private List<Item> itens;
-		@NotNull
 		private Double valortotal;
 		private LocalDate data;
 		private LocalTime horario;
